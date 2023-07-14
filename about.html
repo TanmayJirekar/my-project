@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title> My First Session</title>
+<script>
+    function validateForm()
+    {
+        var x=document.forms["my form"]["stud_name"].value;
+        if(x=="")
+        {
+            alert("Please Enter your name");
+            return false;
+        }
+        var x=document.forms["my form"]["stud_phone"].value;
+        if(x=="")
+        {
+            alert("Please Enter your Contact Number");
+            return false;
+        }
+        var x=document.forms["my form"]["stud_email"].value;
+        if(x=="")
+        {
+            alert("Please Enter your Email");
+            return false;
+        }
+        var x=document.forms["my form"]["stud_address"].value;
+        if(x=="")
+        {
+            alert("Please Enter your Address");
+            return false;
+        }
+       
+
+
+    }
+</script>
+    </head>
+    <body>
+        <center><h1> Sumago Infotech Pvt Ltd.</h1></center>
+        <hr>
+        <center>
+            
+              <a href="demo.html">Home</a>&nbsp;&nbsp;      
+              <a href="about.html">About us</a>&nbsp;&nbsp;   
+              <a href="team.html">Team</a>&nbsp;&nbsp;         
+              <a href="contact.html">Contact</a>&nbsp;&nbsp;  
+        </center>
+        
+        <form name="my form" onsubmit="return validateForm()" method="POST">
+         <fieldset>
+            <legend> Registration form</legend>
+            <label> FULL NAME</label>
+            <input type="text" name="stud_name">
+            <br><br>
+
+            <label> Contact Number</label>
+            <input type="text" name="stud_phone">
+            <br><br>
+
+            <label> Email id</label>
+            <input type="email" name="stud_email">
+            <br><br>
+
+            <label> Address</label>
+            <textarea row="10" cols="10" name="stud_address"></textarea>
+            <br><br>
+
+            <label> Gender</label>
+            <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+            
+            <br><br>
+
+            <label> City</label>
+            <select name="stud_city">
+                <option>Nashik</option>
+                <option>Dhule</option>
+                <option>Mumbai</option>
+                <option>Pune</option>
+            </select>
+            <br><br>
+            <label> User name</label>
+            <input type="text" name="stud_user">
+                <br><br>
+
+
+                <label> Password</label>
+                <input type="password" name="stud_pass" placeholder="password should be more than 8 characters">
+                    <br><br>
+
+
+                    <label>DOB</label>
+                    <input type="date" name="stud_dob">
+                        <br><br>
+
+                        <label> Languages</label>
+                        <input type="checkbox" name="lang[]" value="English">English
+                        <input type="checkbox" name="lang[]" value="Hindi">Hindi
+                        <input type="checkbox" name="lang[]" value="Marathi">Marathi
+                        <input type="checkbox" name="lang[]" value="Russian">Russian
+                            <br><br>
+
+                        <label> Select Photo</label>
+                        <input type="file" name="stud_pic">
+                        <br><br>
+                        <input type="submit" name="btn_submit" value="SUBMIT">
+                        <input type="submit" name="btn_reset" value="RESET">
+                    
+                    </fieldset>
+                </form>
+   
+    </body>
+</html>
